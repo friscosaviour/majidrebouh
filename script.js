@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const output = document.getElementById('output');
     const commandInput = document.getElementById('command');
     const terminal = document.getElementById('terminal');
+    const asciiArtDiv = document.getElementById('ascii-art');
 
     // --- Terminal Typing Effect --- //
     const commands = [

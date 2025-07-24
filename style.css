@@ -26,19 +26,20 @@ body {
 }
 
 #terminal {
-    padding: 2rem;
+    padding: 1rem;
     height: 100%;
     overflow-y: auto;
     word-wrap: break-word;
 }
 
-#bonsai-output {
+#ascii-art {
     white-space: pre;
-    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 0.5rem; /* Adjust as needed */
+    line-height: 0.5;
+    margin-bottom: 1rem;
     color: var(--foreground);
-    margin-bottom: 2rem;
-    /* Adjust font size for bonsai if needed */
-    font-size: 0.8rem; 
+    overflow-x: auto;
 }
 
 .line {
@@ -56,7 +57,7 @@ body {
 }
 
 .output {
-    padding-left: 1rem;
+    /* Removed padding-left */
 }
 
 a {
