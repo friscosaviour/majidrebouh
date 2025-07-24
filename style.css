@@ -167,89 +167,7 @@ nav ul li a:hover {
     display: inline;
 }
 
-/* Hero Section */
-.hero-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-}
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
-    animation: hero-bg-animation 15s infinite alternate ease-in-out;
-}
-
-@keyframes hero-bg-animation {
-    0% { transform: scale(1) rotate(0deg); opacity: 0.5; }
-    100% { transform: scale(1.2) rotate(10deg); opacity: 0.7; }
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
-.hero-content h1 {
-    font-size: 4em;
-    margin-bottom: 10px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slide-up 0.8s forwards;
-}
-
-.hero-content p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slide-up 0.8s forwards;
-}
-
-.animated-text.delay-1 {
-    animation-delay: 0.2s;
-}
-
-.animated-text.delay-2 {
-    animation-delay: 0.4s;
-}
-
-@keyframes slide-up {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.btn {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
-}
-
-.btn:hover {
-    background-color: #00a3b8;
-    transform: translateY(-3px);
-}
 
 /* Sections General */
 section {
@@ -631,13 +549,7 @@ footer p {
         margin: 10px 0;
     }
 
-    .hero-content h1 {
-        font-size: 2.8em;
-    }
-
-    .hero-content p {
-        font-size: 1.2em;
-    }
+    
 
     .section-title {
         font-size: 2em;
