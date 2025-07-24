@@ -3,18 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>majid.dev</title>
+    <title>Majid Rebouh - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="terminal">
-        
-        
-        <div id="output"></div>
-        <div class="line">
-            <span class="prompt"></span><span id="command"></span><span class="cursor"></span>
+    <div class="custom-cursor"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Majid Rebouh</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="icon-light">☀️</span>
+                <span class="icon-dark">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="animated-text">Hi, I'm Majid Rebouh.</h1>
+                <p class="animated-text delay-1">A passionate Frontend Developer & Researcher.</p>
+                <a href="#projects" class="btn animated-text delay-2">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section fade-in">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image-container">
+                        <img src="Majid_Image.jpeg" alt="Majid Rebouh" class="about-image">
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm Majid Rebouh, a dedicated individual with a strong foundation in both scientific research and frontend development. My journey has equipped me with a unique blend of analytical thinking, problem-solving skills, and a passion for creating engaging and functional web experiences.</p>
+                        <p>I am currently pursuing a B.S. in Genetics and Plant Biology at UC Berkeley, with an expected graduation in May 2029. My academic background is complemented by hands-on experience in various research and technical roles, including Summer Research Intern at COSMOS @ UC Santa Cruz, Exhibit Technician at Mission Science Workshop, and Mars Rover Robotics Camp Lead.</p>
+                        <p>My technical skills span across programming languages like Python, C++, HTML, CSS, and JavaScript. I'm proficient in web development frameworks such as React and have experience with various tools for bioinformatics, embedded systems, CAD & fabrication, and AI & CV systems. I thrive in collaborative environments and am always eager to learn and apply new technologies to solve complex challenges.</p>
+                        <p>Beyond my technical pursuits, I possess strong soft skills in multitasking, teamwork, and communication. I am fluent in English, Korean, and French, and conversational in Spanish. I am passionate about science and laboratory research, and committed to supporting academic projects.</p>
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> <a href="mailto:magnetowasright325@gmail.com">magnetowasright325@gmail.com</a></p>
+                            <p><strong>Phone:</strong> (628)5297692</p>
+                            <p><strong>Connect:</strong> <a href="https://www.linkedin.com/in/majid-rebouh" target="_blank">LinkedIn</a> | <a href="https://github.com/majid-rebouh" target="_blank">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-experience">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>UC Berkeley</strong>, Berkeley, CA - B.S. Genetics and Plant Biology (Intended), Expected Graduation: May 2029</li>
+                        <li><strong>Balboa High School</strong>, San Francisco, CA - High School Diploma, GPA: 4.18, Graduation: June 2025</li>
+                    </ul>
+
+                    <h3>Relevant Experience</h3>
+                    <ul>
+                        <li><strong>Summer Research Intern</strong>, COSMOS @ UC Santa Cruz (August 2023)
+                            <ul>
+                                <li>Conducted biodegradation research using bacterial and enzymatic strategies on LDPE.</li>
+                                <li>Performed DNA extraction, PCR, and microbial culturing with environmental samples.</li>
+                                <li>Practiced sterile technique and handled lab waste and EHS safety procedures.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Exhibit Technician</strong>, Mission Science Workshop, San Francisco, CA (Aug 2023 – Present)
+                            <ul>
+                                <li>Maintained science exhibits, emphasizing lab safety and equipment upkeep.</li>
+                                <li>Communicated scientific concepts to K-8 audiences; worked with biochemistry props.</li>
+                                <li>Collaborated in a lab-like setting to manage materials, troubleshoot hardware.</li>
+                                <li>Design and maintain interactive science exhibits using carpentry, 3D printing, and Arduino systems.</li>
+                                <li>Construct and upgrade exhibits including the "Touch-Me Terrarium," "Tessellation Station," and "Transformer Chamber."</li>
+                                <li>Apply science communication strategies to engage K-8 learners.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mars Rover Robotics Camp Lead</strong>, Mission Science Workshop (May 2025)
+                            <ul>
+                                <li>Managed equipment inventory and component ordering for 20-student STEM camp.</li>
+                                <li>Programmed ESP32-based Wi-Fi robots and developed a React/Vite instructional website.</li>
+                                <li>Oversaw 500+ hours of 3D printing with SolidWorks-modeled parts.</li>
+                                <li>Designed, led, and documented a full-day robotics workshop for 20 middle school students.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Environmental Restoration Intern</strong>, McLaren Park, San Francisco, CA (Jun 2023 – Aug 2023)
+                            <ul>
+                                <li>Assisted in the sorting and disposal of waste and restoration materials.</li>
+                                <li>Followed safety protocols and multi-tasked across multiple site operations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Robotics Developer</strong>, Noisebridge, San Francisco, CA (Jun 2023 – Aug 2023)
+                            <ul>
+                                <li>Engineered AI imaging systems using Nvidia Jetson and Intel RealSense.</li>
+                                <li>Designed 3D-printed components for AUV locomotion and underwater imaging.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section fade-in">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card" data-project="fractals">
+                        <h3>Interactive Fractals</h3>
+                        <p>HTML, CSS (Tailwind), JavaScript</p>
+                        <p>Built an interactive web app to visualize classic fractals with zoom/pan, animations, and user-defined complexity.</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="project-card" data-project="streamer-ranker">
+                        <h3>Streamer Activity Ranker</h3>
+                        <p>React, Tailwind CSS, Supabase</p>
+                        <p>Created a voting-based web app for streamer ideas with real-time sorting, responsive layout, and persistent state.</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="project-card" data-project="plant-optimization">
+                        <h3>Plant Growth Optimization System</h3>
+                        <p>Python, TensorFlow/Keras, OpenCV, Raspberry Pi</p>
+                        <p>Designed an RL-powered plant care system with custom CV features and hardware.</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-tech"></p>
+                <p id="modal-description"></p>
+                <div id="modal-links"></div>
+            </div>
         </div>
-    </div>
+
+        <section id="contact" class="contact-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Majid Rebouh. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
